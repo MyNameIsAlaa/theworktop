@@ -1,0 +1,529 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Hanlding Updates
+-----------------------------------------------------------------*/
+
+#header{
+
+    *{
+        transition: all 0.5s;
+    }
+
+    #logo{
+        font-size: 24px;
+        img{
+            margin-top:36px;
+            height: auto !important;
+        }
+    }
+    &.dark, &.sticky-header #header-wrap{
+        color:#fff;
+        background-color: #3e3530 !important;
+    }
+    &.sticky-header:not(.static-sticky){
+        .side_menu a{
+            margin: 15px 5px !important;
+        }
+        #logo{
+            img{
+                margin-top:20px ;
+            }
+        }
+    }
+
+
+
+    .side_menu{
+        li{
+            display:inline;
+            line-height: 100%;
+            padding:0px;
+            margin:0px;
+            a{
+                color: #a6958d !important;
+                margin: 40px 6px !important;
+            }
+        }
+
+        .round_btn{
+            display:inline-block;
+            font-size: 12px;
+            padding: 3px 20px;
+            border-radius: 50px;
+            background: none !important;
+            color: #b6a9a1;
+            border:1px solid #b6a9a1 !important;
+
+            &:hover{
+           //     background: #472d1f !important;
+                color: #ffffff !important;
+                border:1px solid #ffffff !important;
+            }
+        }
+    }
+
+    #primary-menu{
+        ul li > a{
+            color: #a6958d !important;
+            font-size: 18px;
+         }
+    }
+
+    #primary-menu-trigger{
+        font-size: 28px;
+        display: inline-block;
+    }
+
+
+}
+
+
+.card-header{
+    background-color: rgb(248, 236, 229);
+}
+
+#slider{
+    .card{
+        border-radius: 10px;
+
+        .quote_btn, .retreive_btn{
+            min-width: 80%;
+            margin:4px 0px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 50px;
+            background-color:#5a8daa;
+            border:1px solid #5a8daa;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.247);
+
+           svg, i{
+                margin-left:15px;
+            }
+        }
+        .retreive_btn{
+            color:#bfa69a;
+            background-color:#ffffff;
+            border:1px solid #bfa69a;
+        }
+
+    }
+}
+
+#footer{
+    color: #b4aeab !important;
+    background: #392d27 !important;
+
+    .footer-widgets-wrap{
+        padding:40px 0px;
+    }
+
+    #copyrights{
+      color: #b4aeab !important;
+      background: #2c221e;
+    }
+
+    .social-icon{
+        background: none;
+        color: #b4aeab;
+        border:none;
+    }
+}
+
+#content{
+    font-size: 1.2em;
+
+   h1,h2,h3,h4,h5{
+    padding: 0px;
+    margin:10px 0px 10px;
+    color: #966953;
+    text-transform: uppercase;
+    font-weight: 400;
+   }
+
+   .gray{
+    color:#b8b4b4;
+       img{
+           max-width: 60px;
+           height: auto;
+       }
+    h1,h2,h3,h4,h5{
+        text-transform: none;
+        color:#b8b4b4;
+        font-weight:700;
+    }
+   }
+
+   .banner{
+       font-size: 1em;
+       border:1px solid #d0cecc;
+       padding:10px 10px;
+       margin: 0px 0px 15px;
+       h1,h2,h3,h4,h5{
+        margin:0px 0px 5px;
+       }
+       p{
+           line-height: 1.3em;
+           margin:0px 0px 5px;
+       }
+   }
+}
+
+
+
+
+
+
+.btn-facebook{
+    text-transform: uppercase;
+    background: #3B5998;
+    color: #ffffff;
+}
+
+.btn-google{
+    text-transform: uppercase;
+    background: #4285F4;
+    color: #ffffff;
+}
+.btn-google:hover{
+background: #146eff;
+}
+.btn-facebook:hover{
+    background: #0b3286;
+}
+
+.btn-facebook svg, .btn-google svg{
+    margin-top:3px;
+}
+
+#top-bar, #top-social li,#top-bar .top-links ul li{
+border:none;
+}
+
+.hero-action-link {
+    margin-left: 30px;
+    color: #ddd;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+
+#top-bar{
+    height: 52px;
+    line-height: 52px;
+    z-index: 9999;
+    background-color: #ffffff !important;
+    color: #000000  !important;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+
+#primary-menu .button{
+    margin-top:25px;
+}
+
+.btn,.matrial_btn.button_selected, .category_btn.button_selected, .shape_btn.button_selected, .jobs_btn.button_selected{
+ background: #3e3530;
+border-color: #3e3530;
+color: #a6958d;
+border-radius: 0;
+}
+
+.jobs_btn{
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #3e3530;
+    color: #3e3530;
+    padding: 18px 16px;
+}
+
+.mybutton{
+    cursor: pointer;
+    display: inline-block;
+    background: #ffffff;
+    border: 2px solid #d4d4d4;
+    padding:15px;
+    //order-radius: 6px;
+    margin: 2px;
+    text-align: center;
+    position: relative;
+    min-height: 160px;
+    width:24.2%;
+    img{
+        display: block;
+        margin:10px auto 10px;
+        max-width: 100%;
+        height: auto;
+    }
+    span{
+        color: #858585;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 4px;
+        left: 0px;
+        width: 100%;
+    }
+}
+
+
+.category_btn_wrap{
+    position: relative;
+    display: inline-block;
+    width:24.2;
+    height: auto;
+    margin: 10px 0px 40px;
+    padding: 14px;
+    transition: 0.2s all; 
+    border: 2px solid transparent;
+
+    &:hover{
+        border:2px solid #2e2e2e;
+        .btnwrap{
+            opacity: 1;
+        }
+    }
+
+    span{
+        display: block;
+        padding: 14px 0px;
+        text-align: center;
+        font-size:0.9em;
+    }
+
+    .btnwrap{
+         opacity:0;
+         transition: 0.2s all; 
+         position: absolute;
+         bottom: -20px;
+         left:0;
+         right:0;
+         margin:auto;
+         background: #fff;
+         width: 80%;
+         height: 40px;
+         text-align: center;
+
+        .addtocardbtn, .fav_btn, .addtocardbtn_done{
+            cursor: pointer;
+            text-transform: uppercase;
+            background: #2e2e2e;
+            padding:0.5rem 1.4rem;
+            margin:0px 0px 6px;
+            font-size: 0.9em;
+            color:#fff;
+            display: inline-block;
+        }
+
+        .addtocardbtn_done, .fav_btn.added{
+            display: none;
+            background: #fff;
+            color:#2e2e2e;
+            border:1px solid #2e2e2e;
+        }
+
+        .fav_btn.added{
+            display: inline-block;
+        }
+
+        i, svg{
+            margin-right: 8px;
+        }
+    }
+
+
+    .image_wrap{
+        display: block;
+        box-shadow: 0px 15px 15px -10px rgba(0,0,0,0.6) !important;
+        overflow: hidden;
+        position: relative;
+        min-width:250px;
+        min-height: 160px;
+
+        img{
+            position: absolute;
+            top:0px;
+            left:0px;
+            width:100%;
+        }
+    }
+    /*
+     .fav_btn
+     {
+        cursor: pointer;
+         z-index: 99999;
+         position: absolute;
+         top:-2px;
+         left:-2px;
+         background: #fff;
+         border: 1px solid #dbdbdb;
+         border-radius: 100%;
+         height: 40px;
+         width:40px;
+         padding:0px;
+         line-height: 40px;
+         text-align: center;
+         transition: all 0.5s;
+         &:hover{
+           color:#14cc03;
+           background: #fff9ea;
+           border: 1px solid #14cc03;
+         }
+
+         &.added{
+             background: #14cc03 !important;
+             border: 1px solid #14cc03 !important;
+             color: #fff !important;
+         }
+     }
+*/
+
+}
+
+.step_panel{
+    display:none;
+}
+.step_panel > h3{
+    font-size: 19px;
+}
+.btngroup{
+    display: block;
+    clear: both;
+    margin-top:40px;
+}
+
+
+
+
+@media (max-width: 991.98px) {
+
+    #primary-menu{
+        margin: 80px 0px 0px;
+    }
+
+     #top-bar{
+         display: none;
+     }
+     .mybutton{
+         width:90%;
+     }
+}
+
+a, .btn-link, .page-link, .page-link:hover, .page-link:focus{
+        color: #2e2e2e;
+}
+.pagination{
+    margin:0px auto;
+    text-align: center;
+}
+.page-item.active .page-link, .page-link:hover, .page-link:focus {
+    color: #FFF !important;
+    background-color: #2e2e2e !important;
+    border-color: #2e2e2e !important;
+}
+
+
+
+.brightnesslist{
+    margin:14px auto;
+    text-align: center;
+    li{
+        font-size: 0.85em;
+        text-transform: uppercase;
+        display: inline-block;
+        list-style: none;
+        color:#fff;
+        cursor: pointer;
+        padding:9px 80px;
+        margin: 8px 5px 8px;
+        color:#fff;
+        background: #363431;
+        &:hover{
+          background: #ada89f;
+        }
+        &.active{
+            color:#363431;
+            background: #fff;
+            border:1px solid #363431;
+        }
+    }
+}
+
+
+.matrials_list{
+    width:100%;
+    text-align: left;
+    margin:0px auto;
+    border-bottom:1px solid #363431;
+
+    li{
+        text-align: center;
+        display: inline-block;
+        list-style: none;
+        color:#363431;
+        cursor: pointer;
+        padding:9px 18px;
+        &:hover{
+           border-bottom:4px solid #ada89f;
+        }
+        &.active{
+            color:#363431;
+            background: #fff;
+            border-bottom:4px solid #363431;
+        }
+    }
+}
+
+
+
+#catalog_page{
+
+    .main_image{
+        overflow: hidden;
+        position: relative;
+        margin: 20px auto;
+        width:80%;
+        min-height: 240px;
+        background:rgb(199, 199, 199);
+        box-shadow: 0px 15px 15px -10px rgba(0,0,0,0.6) !important;
+        img{
+            position: absolute;
+            top:0px;
+            left:0px;
+            width:100% !important;
+            min-height: 100%;
+        }
+    }
+
+     .btnwrap{
+
+        .addtocardbtn, .fav_btn, .addtocardbtn_done{
+            cursor: pointer;
+            text-transform: uppercase;
+            background: #2e2e2e;
+            padding:0.5rem 1.4rem;
+            margin:0px 0px 6px;
+            font-size: 0.9em;
+            color:#fff;
+            display: inline-block;
+        }
+
+        .addtocardbtn_done, .fav_btn.added{
+            display: none;
+            background: #fff;
+            color:#2e2e2e;
+            border:1px solid #2e2e2e;
+        }
+
+        .fav_btn.added{
+            display: inline-block;
+        }
+
+        i, svg{
+            margin-right: 8px;
+        }
+    }
+}
